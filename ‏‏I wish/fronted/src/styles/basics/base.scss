@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.75;
+    text-align: center;
+    direction: rtl;
+}
+
+body {
+   margin: 0; 
+  }
+  
+  
+button:disabled,button[disabled]{
+  background-color: #cccccc;
+  cursor:not-allowed !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 2rem;
+}
+
+button{
+  cursor: pointer;
+}
+p {
+    margin: 0 0 2rem;
+    max-width: 46ch;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+  }
+  
+  // MAC like scrollbar
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical:active {
+    -webkit-border-radius: 100px;
+  }
+  

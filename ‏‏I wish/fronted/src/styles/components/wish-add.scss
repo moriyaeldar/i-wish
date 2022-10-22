@@ -1,0 +1,89 @@
+.wish-add {
+  background-color: white;
+  font-family: he;
+  color: rgb(58, 57, 57);
+  direction: rtl;
+  h2,
+  h4 {
+    font-family: he-bold;
+  }
+  span{
+    font-family: en;
+  }
+  .back {
+    background-color: white;
+    color: grey;
+    border: hidden;
+  }
+  button {
+    background-color: $basic;
+    color: white;
+    border-radius: 50px;
+    width: 33%;
+    height: 50px;
+  }
+  img {
+    transform: rotate(52deg);
+  }
+  .strip {
+    padding: 10%;
+    background-color: $basic;
+  }
+  .companies-list>*{
+margin-bottom: 47px;
+  }
+  .wish>*{
+margin-bottom: 37px;
+  }
+  .wish{
+    form>*{
+      margin-bottom: 47px;
+
+    }
+  }
+  .companies-list,
+  .wish {
+    padding: 4%;
+  }
+  .tnx {
+    height: 80vh;
+    background-color: $basic;
+    color: white;
+    font-size: 55px;
+    padding-top: 20px;
+  }
+
+  @include for-wide-layout {
+    .strip {
+      display: none;
+    }
+    .tnx {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      font-family: he-bold;
+      p {
+        font-size: 120px;
+      }
+      img {
+        width: 15%;
+        height: 70%;
+        transform: rotate(180deg);
+        margin-left: 10%;
+      }
+    }
+    .companies-list,
+    .wish {
+      padding: 10%;
+    }
+    .companies-list {
+      button{
+        margin-top: 80px;
+      }
+      p {
+        margin-right: 35%;
+      }
+    }
+  }
+}

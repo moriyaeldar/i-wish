@@ -1,0 +1,39 @@
+header {
+  background-color: white;
+
+  .links {
+    height: 15vh;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: $basic;
+
+    img {
+      width: 40%;
+    }
+    .img-2 {
+      display: none;
+    }
+
+    a {
+      color: white;
+    }
+    @include for-wide-layout {
+        padding-bottom: 12%;
+      img {
+        width: 35%;
+      }
+      .img-2 {
+        display: flex;
+        margin-left: 104%;
+        transform: translateY(-60px);
+      }
+      .img-1 {
+        transform: translateY(29px);
+        height: 50px;
+        width: 40%;
+      }
+    }
+  }
+}
